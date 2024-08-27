@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Interactive card details form</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left-section">
+        <div class="front-card">
+          <img src="images/bg-card-front.png" alt="" />
+          <div class="front-card-content">
+            <img src="images/card-logo.svg" alt="" />
+            <h1 id="cardNumber" class="card-number">0000 0000 0000 0000</h1>
+            <div class="card-information">
+              <span id="cardName" class="card-name">Jane Appleseed</span>
+              <span class="expiry">
+                <span id="cardMonth" class="card-month">00</span>/
+                <span id="cardYear" class="card-year">00</span>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="back-card">
+          <img src="images/bg-card-back.png" alt="" />
+          <div class="back-card-content">
+            <span id="cardCvv" class="cvv">000</span>
+          </div>
+        </div>
+      </div>
+      <div class="right-section" id="right-sec">
+        <form action="">
+          <label for="Name">Cardholder Name</label>
+          <fieldset>
+            <input
+              type=""
+              id="nameInput"
+              class="name-input"
+              placeholder="e.g. Jane Appleseed"
+              required
+            />
+            <div class="error-msg" id="text-error"></div>
+          </fieldset>
+          <label for="Number">Card Number</label>
+          <fieldset>
+            <input
+              type=""
+              class="number-input"
+              id="numberInput"
+              maxlength="19"
+              placeholder="e.g. 1234 5678 9123 0000"
+              required
+            />
+            <div class="error-msg" id="number-error"></div>
+          </fieldset>
+          <div class="expiry-n-cvv">
+            <div class="expiry-details">
+              <label for="">EXP. Date (MM/YY)</label>
+              <fieldset class="expiry-input">
+                <input
+                  type=""
+                  class="month-input"
+                  id="monthInput"
+                  maxlength="2"
+                  placeholder="MM"
+                  required
+                />
+                <input
+                  type=""
+                  class="year-input"
+                  id="yearInput"
+                  maxlength="2"
+                  placeholder="YY"
+                  required
+                />
+                <div class="error-msg year-error" id="month-error"></div>
+              </fieldset>
+            </div>
+            <div class="cvv-details">
+              <label for="">CVV</label>
+              <fieldset>
+                <input
+                  type=""
+                  class="cvv-input"
+                  id="cvvInput"
+                  maxlength="3"
+                  placeholder="e.g. 123"
+                  required
+                />
+                <div class="error-msg" id="cvv-error"></div>
+              </fieldset>
+            </div>
+          </div>
+          <button id="submit-btn" class="btn" type="submit">Confirm</button>
+        </form>
+      </div>
+      <div class="complete hidden" id="complete-state">
+        <img src="images/icon-complete.svg" alt="" />
+        <h1>Thank You!</h1>
+        <span>We've added your card details</span>
+        <button id="complete-btn" class="btn">Continue</button>
+      </div>
+    </div>
+    <script defer src="script.js"></script>
+  </body>
+</html>
