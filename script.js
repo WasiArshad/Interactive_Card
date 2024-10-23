@@ -123,7 +123,7 @@ function updateCardByUserNum() {
   cardNumber.innerHTML = numberInput.value;
   if (numberInput.value.length > 0) {
     cardNumber.textContent = numberInput.value;
-    cardNumber.style.fontSize = "27px";
+    cardNumber.style.fontSize = "25px";
     cardNumber.style.letterSpacing = "5px";
   } else {
     cardNumber.textContent = dummyNumber;
