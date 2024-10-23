@@ -127,7 +127,7 @@ function updateCardByUserNum() {
     cardNumber.style.letterSpacing = "5px";
   } else {
     cardNumber.textContent = dummyNumber;
-    cardNumber.style.fontSize = "27px";
+    cardNumber.style.fontSize = "25px";
     cardNumber.style.letterSpacing = "4px";
   }
 }
