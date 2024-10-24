@@ -108,7 +108,7 @@ input {
     border: 1px solid hsl(270, 3%, 87%);
     padding: 13px;
     border-radius: 8px;
-    width: 15em;
+    width: 15.4em;
     
 }
 ::placeholder {
@@ -118,16 +118,16 @@ input {
     font-size: 18px;
 }
 .name-input {
-    width: 28em;
+    width: 27.8em;
 }
 .number-input {
-    width: 28em;
+    width: 27.8em;
 }
 .month-input {
-    width: 75px;
+    width: 72px;
 }
 .year-input {
-    width: 75px;
+    width: 72px;
 }
 .expiry-input {
     /* display: flex; */
@@ -411,6 +411,7 @@ input {
         letter-spacing: 2.1px;
         font-size: 16px;
         margin-block: 26px 15px;
+        text-decoration: none;
     }
     .back-card-content {
         top: 41%;
