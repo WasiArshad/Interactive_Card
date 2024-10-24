@@ -108,7 +108,7 @@ input {
     border: 1px solid hsl(270, 3%, 87%);
     padding: 13px;
     border-radius: 8px;
-    width: 15.4em;
+    width: 100%;
     
 }
 ::placeholder {
@@ -118,10 +118,10 @@ input {
     font-size: 18px;
 }
 .name-input {
-    width: 27.8em;
+    width: 100%;
 }
 .number-input {
-    width: 27.8em;
+    width: 100%;
 }
 .month-input {
     width: 72px;
@@ -141,10 +141,11 @@ input {
 .expiry-n-cvv {
     display: flex;
     gap: 1em;
+    width: 100%;
 }
 .btn {
     padding: 17px;
-    width: 23.5em;
+    width: 100%;
     border: none;
     color: hsla(0, 0%, 100%, 0.854);
     background-color: hsl(278, 68%, 11%);
