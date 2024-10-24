@@ -41,6 +41,7 @@
     font-size: 27px;
     letter-spacing: 4px;
     color: hsla(0, 0%, 100%, 0.927);
+    text-decoration: unset;
 }
 .card-information {
     display: flex;
@@ -315,7 +316,7 @@ input {
         height: 28vh;
     }
     .front-card {
-        top: 51%;
+        top: 56.5%;
         left: 5%;
         z-index: 2;
     }
@@ -381,13 +382,13 @@ input {
         left: 7%;
     }
     .name-input {
-        width: 23em;
+        width: 100%;
     }
     .number-input {
-        width: 23em;
+        width: 100%;
     }
     .btn {
-        width: 19.5em;
+        width: 100%;
         padding: 15px;
     }
     .cvv-input {
